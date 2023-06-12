@@ -5,7 +5,7 @@
 创建一个spring boot 应用，引入下面的依赖
 ```
 <dependency>
-      <groupId>com.github.wenkiam</groupId>
+      <groupId>io.github.wenkiam</groupId>
       <artifactId>vertx-spring-boot-starter</artifactId>
       <version>1.0-SNAPSHOT</version>
 </dependency>
