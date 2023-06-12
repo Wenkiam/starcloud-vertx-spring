@@ -1,2 +1,2 @@
 org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
-com.starcloud.vertx.zookeeper.spring.autoconfigure.VertxZookeeperAutoConfiguration
+starcloud.vertx.zookeeper.spring.autoconfigure.VertxZookeeperAutoConfiguration

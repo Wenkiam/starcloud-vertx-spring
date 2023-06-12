@@ -1,2 +1,2 @@
 org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
-com.starcloud.vertx.spring.autoconfigure.VertxAutoConfiguration
+starcloud.vertx.spring.autoconfigure.VertxAutoConfiguration
