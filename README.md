@@ -3,7 +3,7 @@
 ### 快速开始
 
 创建一个spring boot 应用，引入下面的依赖
-```
+```xml
 <dependency>
       <groupId>io.github.wenkiam</groupId>
       <artifactId>vertx-spring-boot-starter</artifactId>
@@ -11,7 +11,7 @@
 </dependency>
 ```
 在spring boot启动类里加上@VerticleScan注解
-```
+```java
 @SpringBootApplication
 @VerticleScan
 public class Main {
@@ -22,7 +22,7 @@ public class Main {
 ```
 
 编写你自己的verticle，加上@DeployOptions注解，或者将verticle注册为spring bean，vertx会自动部署它们
-```
+```java
 @DeployOptions(instances = 4)
 public class WebServerVerticle extends AbstractVerticle {
 
@@ -40,5 +40,12 @@ public class WebServerVerticle extends AbstractVerticle {
         }).onFailure(Throwable::printStackTrace);
     }
 }
+```
+可以在spring boot配置文件里定制 vertx 启动参数
+```properties
+vertx.options.eventLoopPoolSize=4
+vertx.options.worker-pool-size=10
+vertx.options.eventBusOptions.idle-timeout=1000
+...
 ```
 具体示例代码可参考example里面的示例项目
