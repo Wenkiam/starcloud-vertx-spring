@@ -10,7 +10,7 @@
     <relativePath/>
   </parent>
   <artifactId>starcloud-vertx-spring</artifactId>
-  <version>1.0</version>
+  <version>1.0.1-SNAPSHOT</version>
   <packaging>pom</packaging>
   <modules>
     <module>vertx-spring</module>
