@@ -7,7 +7,7 @@
 <dependency>
       <groupId>io.github.wenkiam</groupId>
       <artifactId>vertx-spring-boot-starter</artifactId>
-      <version>1.0-SNAPSHOT</version>
+      <version>1.0</version>
 </dependency>
 ```
 在spring boot启动类里加上@VerticleScan注解
